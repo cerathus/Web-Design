@@ -1,0 +1,104 @@
+main
+{
+	height: 100%;
+	margin: auto 0;
+	font-family: 'Raleway','Microsoft JhengHei';
+}
+
+.fixed-bg {
+	min-height: 100%;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 20px;
+	line-height: 1.5;
+}
+
+h1 {
+	text-align: center;
+	font-size: 3.5em;
+	color: rgba(255, 255, 255, 1.0);
+	text-shadow: 1px 1px 10px #000, 5px 5px 20px #000, 1px 0px 20px #def;
+	opacity: 0.95;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.main-text {
+	font-size: 5.5em;
+	line-height: 0px;
+}
+
+.sub-text{
+	text-align: center;
+
+	color: #fff;
+	line-height: 0px;
+	text-shadow: 1px 1px 10px #000, 5px 5px 20px #000, 1px 0px 20px #def;
+}
+
+.fixed-bg h2 {
+	font-size: 4em;
+}
+
+.fixed-bg p {
+	position: fixed;
+	text-align: center;
+	max-width: 500px;
+	font-size: 1.2em;
+}
+
+.text-box h2{
+	justify-content: center;
+	display: text-box;
+}
+
+.bg-1 {
+	background-image: url("https://images.unsplash.com/photo-1658334439475-4a1cb7b31bb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+	background-size: 100%,100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-1-1 {
+	background-image: url("https://images.unsplash.com/photo-1657047211843-2d7fa44553b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	display: grid;
+	grid-auto-columns: [line1] 0% [line2] 20% [line3] 40% [line4] 60% [line5] 80% [line6] 100% [end];
+}
+
+.text-box{
+	/*Box mit dem ganzen Text, der in der mitte des Screens sein sollte*/
+	background: rgba(255, 255, 255, 0.95);
+	padding: 20px;
+	margin: 0;
+	max-width: 3cm;
+	grid-column-start: line2;
+	grid-column-end: line5;
+}
+
+.text-box-1{
+	/*Version 2 der text-box, noch nicht klar ob nötig*/
+	background: rgba(255, 255, 255, 0.95);
+	padding: 20px;
+	margin: 0;
+	max-width: 3cm;
+	top: below text-box;
+	grid-column-start: line2;
+	grid-column-end: line5;
+}
