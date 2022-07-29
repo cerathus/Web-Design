@@ -1,24 +1,11 @@
-main
-{
+body, html, main {
 	height: 100%;
+	background-image: url('./amogusgrey.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	margin: auto 0;
 	font-family: 'Raleway','Microsoft JhengHei';
-}
-
-.fixed-bg {
-	min-height: 100%;
-	-webkit-background-size: cover !important;
-	-moz-background-size: cover !important;
-	-o-background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	padding: 0 20px;
-	line-height: 1.5;
 }
 
 h1 {
@@ -31,20 +18,40 @@ h1 {
 
 img {
 	width: 100%;
-	height: auto;
+	height: 100%;
+}
+
+
+.auswahl {
+	list-style: none;
+	background: gainsboro;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	width: 25%;
+	list-style-type: none;
+}
+
+#hypers ul{
+	display: inline-block;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.auswahl div{
+	display: block;
+	position: relative;
+	color: black;
 }
 
 .main-text {
 	font-size: 5.5em;
 	line-height: 0px;
-}
-
-.sub-text{
-	text-align: center;
-
-	color: #fff;
-	line-height: 0px;
-	text-shadow: 1px 1px 10px #000, 5px 5px 20px #000, 1px 0px 20px #def;
 }
 
 .fixed-bg h2 {
@@ -64,10 +71,18 @@ img {
 }
 
 .bg-1 {
-	background-image: url("https://images.unsplash.com/photo-1658334439475-4a1cb7b31bb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
-	background-size: 100%,100%;
+	/* Titel */
+	background-image: url("https://images.unsplash.com/photo-1658696971350-cd59d6b18f6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
+	background-size: 100%,100%, contain;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: cover;
+}
+
+.sub-text{
+	/* Untertitel des Titels */
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 1px 10px #000, 5px 5px 20px #000, 1px 0px 20px #def;
 }
 
 .bg-1-1 {
@@ -82,23 +97,23 @@ img {
 	grid-auto-columns: [line1] 0% [line2] 20% [line3] 40% [line4] 60% [line5] 80% [line6] 100% [end];
 }
 
-.text-box{
+.text-box {
 	/*Box mit dem ganzen Text, der in der mitte des Screens sein sollte*/
 	background: rgba(255, 255, 255, 0.95);
-	padding: 20px;
+	padding: 30px;
 	margin: 0;
-	max-width: 3cm;
-	grid-column-start: line2;
+	max-width: 4cm;
+	grid-column-start: line3;
 	grid-column-end: line5;
 }
 
-.text-box-1{
+.text-box-1 {
 	/*Version 2 der text-box, noch nicht klar ob nötig*/
 	background: rgba(255, 255, 255, 0.95);
-	padding: 20px;
+	padding: 30px;
 	margin: 0;
-	max-width: 3cm;
+	max-width: 4cm;
 	top: below text-box;
-	grid-column-start: line2;
+	grid-column-start: line3;
 	grid-column-end: line5;
 }
