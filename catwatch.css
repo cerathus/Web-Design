@@ -1,0 +1,39 @@
+body,html,main  {
+	height: 100%;
+	background-color: #f16059;
+}
+
+.page {
+	width: 80%;
+	max-width: 960px;
+	margin: 50px auto;
+	text-align: center;
+	background-color: #f16059;
+	border-radius: 5px;
+}
+
+.auswahl{
+	list-style: none;
+	background: gainsboro;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	width: 25%;
+	list-style-type: none;
+}
+
+.hypers ul{
+	display: inline-block;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.auswahl {
+	position: relative;
+	color: black;
+}
